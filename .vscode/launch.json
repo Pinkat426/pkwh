@@ -1,0 +1,55 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "cwd": "${workspaceFolder}",
+            "executable": "./build/Debug/H7_APP.elf",
+            "name": "Debug with JLink",
+            "request": "launch",
+            "type": "cortex-debug",
+            "device": "STM32H723VG",
+            "svdFile": "${workspaceFolder}/STM32H723.svd",
+            "runToEntryPoint": "main",
+            "showDevDebugOutput": "none",
+            "interface": "swd",
+            "servertype": "jlink",
+            "serverpath": "C:/Program Files/SEGGER/JLink_V798i/JLinkGDBServerCL.exe",
+            "swoConfig": {
+                "enabled": true,
+                "cpuFrequency": 480000000,
+                "swoClock": 4000000,
+                "source": "probe",
+                "decoders": [
+                    {
+                        "type": "console",
+                        "label": "ITM",
+                        "port": 0,
+                        "index": 0,
+                        "enabled": true
+                    }
+                ]
+            },
+            "liveWatch": {
+                "enabled": true,
+                "samplesPerSecond": 20
+            }
+        },
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "./firmware/build/Debug/${workspaceFolderBasename}.elf",
+            "name": "Debug with OpenOCD",
+            "request": "launch",
+            "type": "cortex-debug",
+            "showDevDebugTimestamps": true,
+            "servertype": "openocd",
+            "configFiles": [
+                "stm32f4discovery_dap_swd.cfg",
+            ],
+            "searchDir": [],
+            "runToEntryPoint": "Main",
+            "device": "STM32F405RG",
+            "svdFile": "${workspaceFolder}/STM32F405.svd",
+            "showDevDebugOutput": "none"
+        },
+    ]
+}
