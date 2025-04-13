@@ -30,7 +30,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 68,
+				"line" : 69,
 				"parent" : 0
 			},
 			{
@@ -42,7 +42,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 109,
+				"line" : 116,
 				"parent" : 0
 			},
 			{
@@ -60,13 +60,13 @@
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 102,
+				"line" : 109,
 				"parent" : 0
 			},
 			{
 				"command" : 6,
 				"file" : 0,
-				"line" : 89,
+				"line" : 91,
 				"parent" : 0
 			}
 		]
@@ -77,7 +77,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11"
+					"fragment" : " -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11"
 				},
 				{
 					"backtrace" : 4,
@@ -151,11 +151,31 @@
 				},
 				{
 					"backtrace" : 7,
+					"path" : "D:/ls_stm32/projects/pkwh/Firmware/BSP/bsp_led"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "D:/ls_stm32/projects/pkwh/Firmware/BSP/bsp_key"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "D:/ls_stm32/projects/pkwh/Firmware/JLINK_Debug"
+				},
+				{
+					"backtrace" : 7,
 					"path" : "D:/ls_stm32/projects/pkwh/Firmware/JLINK_Debug/RTT"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "D:/ls_stm32/projects/pkwh/Firmware/BSP/bsp_led"
+					"path" : "D:/ls_stm32/projects/pkwh/Firmware/APP"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "D:/ls_stm32/projects/pkwh/Firmware/APP/comm_task"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "D:/ls_stm32/projects/pkwh/Firmware/APP/key_task"
 				},
 				{
 					"backtrace" : 6,
@@ -251,14 +271,18 @@
 				47,
 				48,
 				49,
-				50
+				50,
+				51,
+				52,
+				53,
+				54
 			]
 		},
 		{
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -x assembler-with-cpp -MMD -MP -g"
+					"fragment" : " -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -x assembler-with-cpp -MMD -MP -g"
 				},
 				{
 					"backtrace" : 4,
@@ -332,11 +356,31 @@
 				},
 				{
 					"backtrace" : 7,
+					"path" : "D:/ls_stm32/projects/pkwh/Firmware/BSP/bsp_led"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "D:/ls_stm32/projects/pkwh/Firmware/BSP/bsp_key"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "D:/ls_stm32/projects/pkwh/Firmware/JLINK_Debug"
+				},
+				{
+					"backtrace" : 7,
 					"path" : "D:/ls_stm32/projects/pkwh/Firmware/JLINK_Debug/RTT"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "D:/ls_stm32/projects/pkwh/Firmware/BSP/bsp_led"
+					"path" : "D:/ls_stm32/projects/pkwh/Firmware/APP"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "D:/ls_stm32/projects/pkwh/Firmware/APP/comm_task"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "D:/ls_stm32/projects/pkwh/Firmware/APP/key_task"
 				},
 				{
 					"backtrace" : 6,
@@ -374,7 +418,7 @@
 			"language" : "ASM",
 			"sourceIndexes" : 
 			[
-				51
+				55
 			]
 		}
 	],
@@ -384,7 +428,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g",
+				"fragment" : "-mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g",
 				"role" : "flags"
 			},
 			{
@@ -477,14 +521,18 @@
 				47,
 				48,
 				49,
-				50
+				50,
+				51,
+				52,
+				53,
+				54
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				51
+				55
 			]
 		}
 	],
@@ -529,7 +577,25 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "BSP/bsp_key/bsp_key_driver.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "BSP/bsp_led/bsp_led_driver.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "APP/comm_task/comm_task.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "APP/key_task/key_task.c",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -560,6 +626,12 @@
 			"backtrace" : 6,
 			"compileGroupIndex" : 0,
 			"path" : "Core/Src/spi.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 6,
+			"compileGroupIndex" : 0,
+			"path" : "Core/Src/tim.c",
 			"sourceGroupIndex" : 0
 		},
 		{

@@ -62,14 +62,16 @@ add_link_options(
 
 # 自动添加 RTT 目录下的所有 .c 文件
 file(GLOB RTT_SOURCES JLINK_Debug/RTT/*.c)
-file(GLOB BSP_LED BSP/bsp_led/*.c)
+file(GLOB_RECURSE BSP_SOURCES BSP/*.c)
+file(GLOB_RECURSE APP APP/*.c)
 
 # Create an executable object type
 add_executable(${CMAKE_PROJECT_NAME}
     # Add user defined sources here
                 BSP/ws2812.c
                 ${RTT_SOURCES}  # 将所有 RTT 目录下的 .c 文件加入
-                ${BSP_LED}
+                ${BSP_SOURCES}
+                ${APP}
 )
 
 # Add STM32CubeMX generated sources
@@ -89,8 +91,13 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
     BSP
-    JLINK_Debug/RTT
     BSP/bsp_led
+    BSP/bsp_key
+    JLINK_Debug
+    JLINK_Debug/RTT
+    APP
+    APP/comm_task
+    APP/key_task
 )
 
 # Add project symbols (macros)

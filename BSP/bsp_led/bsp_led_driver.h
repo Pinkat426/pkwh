@@ -11,7 +11,7 @@
 #define __BSP_LED_DRIVER_H__
 
 /******************************** Includes ***********************************/
-
+#include "Debug_printf.h"
 /******************************** Includes ***********************************/
 /******************************** Defines ************************************/
 
@@ -20,14 +20,6 @@
 #define LED_ON 1
 #define LED_OFF 0
 #define OS_SUPPORTING
-
-#define DEBUG_PK
-#ifdef DEBUG_PK
-#include "SEGGER_RTT.h"
-#define DEBUG_PRINTF(...) SEGGER_RTT_printf(0, __VA_ARGS__)
-#else // DEBUG_PK
-#define DEBUG_PRINTF(...) printf(__VA_ARGS__)
-#endif // DEBUG_PK
 
 /******************************** Defines ************************************/
 /******************************** typedef ************************************/

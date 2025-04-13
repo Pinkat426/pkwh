@@ -154,6 +154,6 @@ led_status_t bsp_led_driver_inst(bsp_led_driver_t *const self,
   DEBUG_PRINTF("bsp_led_driver_inst success!\r\n");
   return ret;
 }
-/********************************test******************************************/
 
+/********************************test******************************************/
 void test_led_driver(void) { DEBUG_PRINTF("test_led_driver start!\r\n"); }

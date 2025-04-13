@@ -66,7 +66,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "H7_APP::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-H7_APP-Debug-a7ee91b2ded6fb29069c.json",
+					"jsonFile" : "target-H7_APP-Debug-fcb54374da9ef0fd7d46.json",
 					"name" : "H7_APP",
 					"projectIndex" : 0
 				}
@@ -76,7 +76,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/ls_stm32/projects/pkwh/Firmware/build/Debug",
+		"build" : "D:/ls_stm32/projects/pkwh/Firmware/build",
 		"source" : "D:/ls_stm32/projects/pkwh/Firmware"
 	},
 	"version" : 
