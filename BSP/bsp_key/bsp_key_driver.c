@@ -10,7 +10,6 @@ int8_t BSP_UserKey_Detect(void) {
   if (keyState == NO_DETECT) {
     if (pinSta == GPIO_PIN_RESET) {
       keyState = DETECTING;
-#warning "TODO: 需要解决溢出的情况"
       overTick = nowTick + 100; // 0.1s
     }
     return BUTTON_NOT_PRESSED;

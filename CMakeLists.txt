@@ -72,6 +72,7 @@ add_executable(${CMAKE_PROJECT_NAME}
                 ${RTT_SOURCES}  # 将所有 RTT 目录下的 .c 文件加入
                 ${BSP_SOURCES}
                 ${APP}
+                JLINK_Debug/RTT/SEGGER_RTT_ASM_ARMv7M.S
 )
 
 # Add STM32CubeMX generated sources
